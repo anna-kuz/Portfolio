@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(4, 6, 7);
+}
+
+@keyframes fadein {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
+
+img {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 500px;
+    left: 700px;
+    animation: fadein 0.5s;
+}
+
+img:hover {
+    z-index: 1;
+    box-shadow: 10px 10px 5px rgba(19, 19, 46, 0.281);
+
+}
+
+h1 {
+    color: rgb(215, 219, 223);
+}
+

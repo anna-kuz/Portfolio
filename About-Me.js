@@ -4,7 +4,8 @@ const images = [
     "IMG_E6113.JPG",
     "IMG_E6114.JPG",
     "IMG_E6115.JPG",
-    "IMG_E6116.JPG"
+    "IMG_E6116.JPG",
+    "IMG_E6110.JPG"
 ]
 
 const size = [
@@ -13,7 +14,8 @@ const size = [
     "200px",
     "300px",
     "200px",
-    "300px"
+    "300px",
+    "250px"
 ]
 
 
@@ -45,7 +47,6 @@ function placeImage(x, y) {
 document.addEventListener("click", function (event) {
     event.preventDefault()
     placeImage(event.pageX, event.pageY)
-
 })
 
 

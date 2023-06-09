@@ -59,7 +59,7 @@ aboutMe.addEventListener("click", function (event) {
     event.preventDefault()
     count ++
     console.log(count)
-    if (count < images.length) {
+    if (count <= images.length) {
     placeImage(event.pageX, event.pageY)
     }
 })

@@ -92,6 +92,7 @@ header {
 
 .navbar {
     display: flex;
+    padding-right: 170px;
 }
 .navbar a {
     color: white;
@@ -205,15 +206,22 @@ h1 {
     font-size: 80px;
     color: rgb(255, 255, 255);
     padding-top: 200px;
+    animation: fadeIn 4s;
 }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 
 
 p {
-    color: rgb(221, 218, 255);
-    padding-left: 200px;
+    color: rgba(255, 255, 255, 0.651);
     max-width: 550px;
     font-size: 20px;
     font-family: Arial Narrow;
+    padding-top: 10px;
+    animation: fadeIn 15s;
 }
 
 

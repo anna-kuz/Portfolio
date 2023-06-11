@@ -6,12 +6,10 @@
 }
 
 :root {
-    --primary-color: white;
-    --secondary-color: black;
-    --primary-logo-last: rgb(192, 192, 255);
-    --secondary-logo-last: #2d004b;
-
-    --light-gradient: linear-gradient(
+    --primary-color: #ffffff;
+    --secondary-color: #edd2ff;
+    --primary-logo-last: #c0c0ff;
+    --gradient: linear-gradient(
         45deg,
         #bb68ff,
         #7e5aff,
@@ -20,19 +18,26 @@
         #55ffe8,
         #60ff9d
     );
-    --dark-gradient: linear-gradient(
+}
+
+.dark-theme {
+    --primary-color: #ffffff;
+    --secondary-color: #3f0457;
+    --primary-logo-last: #4d2096;
+    --gradient: linear-gradient(
         45deg,
-        #251435,
-        #221749,
-        #1a3155,
-        #133d49,
-        #0a3a34,
-        #0c381d
+        #12071d,
+        #120a30,
+        #0b182e,
+        #0a2931,
+        #072e29,
+        #08351e
     );
 }
 
+
 body {
-    background-image: var(--light-gradient);
+    background-image: var(--gradient);
     background-size: 300%;
     height: 100vh;
     animation: bg-animation 15s infinite alternate;
@@ -57,6 +62,7 @@ a {
     text-decoration: none;
     padding: 7px;
     font-weight: 100;
+    cursor: pointer;
 }
 
 header {
@@ -109,7 +115,7 @@ header {
     transition: all .50s ease;
 }
 .navbar a:hover {
-    color: #e9dcff;
+    color: var(--secondary-color);
 
 }
 
@@ -186,7 +192,7 @@ header {
     }
     
     .navbar a:hover {
-        color: #e9dcff;
+        color: var(--secondary-color);
         transform: translateY(5px);
     }
     .navbar.open {
@@ -223,6 +229,12 @@ p {
     font-family: Arial Narrow;
     padding-top: 10px;
     animation: fadeIn 15s;
+}
+
+img {
+    height: 30px;
+    color: rgb(255, 255, 255);
+    animation: fadeIn 10s;
 }
 
 @media (max-wdith: 800px) {

@@ -27,17 +27,19 @@ body {
     100% {background-position: right;}
 }
 
-iframe {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+.resume {
+    position: relative;
+    overflow: hidden;
+    padding-top: 900px
 }
-
-h1 {
-    color: white;
+.resume iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
 
 }
-
 
 
 
@@ -95,6 +97,7 @@ header {
 
 .navbar {
     display: flex;
+
 }
 .navbar a {
     color: var(--text-color);

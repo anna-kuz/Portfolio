@@ -134,6 +134,11 @@ h1 {
     padding-left: 200px;
     margin: 0;
     z-index: 10001;
+    backdrop-filter: radial-gradient(
+        circle at 50% 50%,
+        transparent 150px,
+        rgba(0, 0, 0, 0.9) 160px);
+    max-width: fit-content;
 }
 
 h2 {
@@ -144,15 +149,25 @@ h2 {
     margin: 0;
     font-size: 25px;
     z-index: 1000;
+    max-width: fit-content;
+    backdrop-filter: radial-gradient(
+        circle at 50% 50%,
+        transparent 150px,
+        rgba(0, 0, 0, 0.9) 160px);
 }
 p {
     color: rgb(215, 206, 244);
     padding-left: 200px;
-    max-width: 620px;
+    max-width: 700px;
     font-size: 20px;
     font-family: Arial Narrow;
     z-index: 1000;
     margin-bottom: 400;
+    backdrop-filter: radial-gradient(
+        circle at 50% 50%,
+        transparent 150px,
+        rgba(0, 0, 0, 0.9) 160px);
+    
 }
 
 

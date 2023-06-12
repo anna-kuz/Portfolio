@@ -13,25 +13,25 @@
         45deg,
         #bb68ff,
         #7e5aff,
-        #62a1ff,
-        #5ad9ff,
-        #55ffe8,
-        #60ff9d
+        #627fff,
+        #5aafff,
+        #55e5ff,
+        #60fff7
     );
 }
 
 .dark-theme {
-    --primary-color: #ffffff;
-    --secondary-color: #3f0457;
-    --primary-logo-last: #4d2096;
+    --primary-color: #dadada;
+    --secondary-color: #46155a;
+    --primary-logo-last: #46155a;
     --gradient: linear-gradient(
         45deg,
-        #12071d,
-        #120a30,
-        #0b182e,
-        #0a2931,
-        #072e29,
-        #08351e
+        #11041f,
+        #0f072e,
+        #050f20,
+        #03181d,
+        #001f1b,
+        #002010
     );
 }
 
@@ -119,37 +119,12 @@ header {
 
 }
 
-.main {
-    display: flex;
-    align-items: center;
-}
-
-.main a {
-    margin-right: 25px;
-    margin-left: 10px;
-    color: var(--primary-color);
-    font-size: 20px;
-    font-weight: 100;
-    transition: all .50s ease;
-}
-
 #menu-icon {
     font-size: 30px;
     z-index: 10001;
     cursor: pointer;
     display: none;
     color: var(--primary-color);
-}
-
-@media (max-width: 1280px) {
-    header {
-        padding: 14px 2%;
-        transition: .2s;
-    }
-    .navbar a {
-        padding: 5px 0;
-        margin: 0px 20px;
-    }
 }
 
 @media (max-width: 1280px) {

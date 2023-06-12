@@ -8,23 +8,19 @@ menu.onclick = () => {
 
 
 const images = [
-    "IMG_E6163.JPG",
-    "IMG_E6158.JPG",
-    "IMG_E6113.JPG",
-    "IMG_E6114.JPG",
     "IMG_E6157.JPG",
-    "IMG_E6116.JPG",
-    "IMG_E6110.JPG"
+    "IMG_E6158.JPG",
+    "IMG_E6163.JPG",
+    "IMG_E6174.JPG",
+    "IMG_E6186.JPG"
 ]
 
 const size = [
     "450px",
-    "400px",
-    "200px",
-    "300px",
-    "400px",
-    "300px",
-    "250px"
+    "470px",
+    "550px",
+    "330px",
+    "500px"
 ]
 
 

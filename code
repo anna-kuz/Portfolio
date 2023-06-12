@@ -1,0 +1,284 @@
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html" rel="norefferer noopener">
+                <span class="first">𝐚𝐧𝐧𝐚</span>
+                <span class="last">𝐤𝐮𝐳𝐦𝐢𝐧</span>
+            </a>
+        </div>
+        <ul class="navbar">
+            <a href="About-Me.html" rel="norefferer noopener"><div class="current">About Me</div></a>
+            <a href="AnnaKuzminResume.pdf" rel="norefferer noopener">Resume</a>
+            <a href="Projects.html" rel="norefferer noopener">Projects</a>
+        </ul>
+    
+        <div class="main">
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <script type="text/javascript" src="Projects.js"></script>
+    </header>
+    <h1>Projects</h1>
+    <main class="container">
+        <section class="card">
+          <img src="mntimg.jpeg" class="slide-image">
+          <div class="from-right">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusamus eligendi reiciendis deserunt odit ea cupiditate quod, aut enim odio asperiores possimus quasi iure illo ducimus obcaecati quas nam rem?</p>
+            <a href="#" class="btn">Take Me There!</a>
+          </div>
+        </section>
+      </main>
+        
+        <section class="card">
+            <img src="mntgif3.gif">
+            <div class="from-left">
+                <h3>Project 2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusamus eligendi reiciendis deserunt odit ea cupiditate quod, aut enim odio asperiores possimus quasi iure illo ducimus obcaecati quas nam rem?</p>
+                <a href="#" class="btn">Take Me There!</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="mntgif1.gif">
+            <div class="from-right">
+                <h3>Project 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusamus eligendi reiciendis deserunt odit ea cupiditate quod, aut enim odio asperiores possimus quasi iure illo ducimus obcaecati quas nam rem?</p>
+                <a href="#" class="btn">Take Me There!</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="mntimg2.jpeg">
+            <div class="from-left">
+                <h3>Project 4</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusamus eligendi reiciendis deserunt odit ea cupiditate quod, aut enim odio asperiores possimus quasi iure illo ducimus obcaecati quas nam rem?</p>
+                <a href="#" class="btn">Take Me There!</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="mnt5.jpeg">
+            <div class="from-right">
+                <h3>Project 5</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum accusamus eligendi reiciendis deserunt odit ea cupiditate quod, aut enim odio asperiores possimus quasi iure illo ducimus obcaecati quas nam rem?</p>
+                <a href="#" class="btn">Take Me There!</a>
+            </div>
+        </section>
+    </main>
+    
+    <script src="Projects.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --primary-logo-last: rgb(192, 192, 255);
+    --secondary-logo-last: #2d004b;
+
+
+    --light-gradient: linear-gradient(
+        45deg,
+        #ff6868,
+        #ff9c5a,
+        #ffda62,
+        #ceff5a,
+        #7dff55,
+        #60ff9d
+    );
+    --dark-gradient: linear-gradient(
+        45deg,
+        #3d0101,
+        #4d1f00,
+        #413100,
+        #263800,
+        #0b3300,
+        #003012
+    );
+}
+
+
+
+body {
+    background-image: var(--light-gradient);
+    background-size: 9000%;
+    height: 100vh;
+    animation: bg-animation 25s infinite alternate;
+    font-size: 1.3rem;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left;}
+    100% {background-position: right;}
+}
+
+
+a {
+    text-decoration: none;
+    padding: 7px;
+    font-weight: 100;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 50px;
+    transition: all .50s ease;
+}
+
+
+
+/* name logo */
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.logo .first {
+    color: var(--primary-color);
+}
+.logo .last {
+    color: var(--primary-logo-last);
+}
+
+
+/*  */
+
+
+
+.navbar {
+    display: flex;
+    padding-right: 170px;
+}
+.navbar a {
+    color: var(--primary-color);
+    font-size: 25px;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+.navbar a:hover {
+    color: #e9dcff;
+
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.main a {
+    margin-right: 25px;
+    margin-left: 10px;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 100;
+    transition: all .50s ease;
+}
+
+#menu-icon {
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+    color: var(--primary-color);
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+    .navbar {
+        padding-right: 0px;
+    }
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 1090px) {
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 270px;
+        height: 16vh;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all .50s ease;
+    }
+
+    .navbar a {
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all .50s ease;
+    }
+    
+    .navbar a:hover {
+        color: #e9dcff;
+        transform: translateY(5px);
+    }
+    .navbar.open {
+        right: 2%;
+    }
+}
+
+@media (max-wdith: 800px) {
+    .navbar .links {
+        display: none;
+    } 
+    .navbar .dropdown-button {
+        display: block;
+    }
+    .dropdown-menu {
+        display: block;
+    }
+}
